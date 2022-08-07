@@ -1,14 +1,14 @@
 {
   "name": "todo-editor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A CLI to edit and view your todo.txt",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm run build:watch",
-    "build": "esbuild src/index.ts --bundle --platform=node --outfile=bin/index.js",
-    "build:watch": "esbuild src/index.ts --bundle --watch --platform=node --outfile=bin/index.js"
+    "build": "esbuild src/index.ts --bundle --external:./node_modules/* --platform=node --outfile=bin/index.js",
+    "build:watch": "esbuild src/index.ts --bundle --watch --external:./node_modules/* --platform=node --outfile=bin/index.js"
   },
   "keywords": [
     "todo",
