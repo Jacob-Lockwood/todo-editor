@@ -1,3 +1,4 @@
+[] Add tests
 [] Add comment support?
 [] Add <exit without saving> option
 [] Add settings: sorting, todo/done character, etc

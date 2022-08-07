@@ -2,7 +2,17 @@
 
 View and edit your `todo.txt` file from the terminal.
 
+The main reason for this is having an todo app that can be shared through source control via a human-readable text file.
+
 ## Usage:
+
+Any of these:
+
+```
+npx todo-editor
+yarn todo-editor
+pnpm dlx todo-editor
+```
 
 ```
 Usage: todo-editor [options] [todo-file]
