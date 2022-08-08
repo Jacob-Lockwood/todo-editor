@@ -3,12 +3,12 @@
   "version": "0.1.1",
   "description": "A CLI to edit and view your todo.txt",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm run build:watch",
-    "build": "esbuild src/index.ts --bundle --external:./node_modules/* --platform=node --outfile=bin/index.js",
-    "build:watch": "esbuild src/index.ts --bundle --watch --external:./node_modules/* --platform=node --outfile=bin/index.js"
+    "build": "tsup src/index.ts --format esm --outDir bin",
+    "build:watch": "tsup src/index.ts --format esm --outDir bin --watch"
   },
   "keywords": [
     "todo",
@@ -30,8 +30,8 @@
     "@types/node": "^18.6.2",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
-    "esbuild": "^0.14.51",
     "eslint": "^8.20.0",
+    "tsup": "^6.2.1",
     "typescript": "^4.7.4"
   },
   "dependencies": {
