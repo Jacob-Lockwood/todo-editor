@@ -1,6 +1,6 @@
 {
   "name": "todo-editor",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A CLI to edit and view your todo.txt",
   "main": "index.js",
   "type": "module",
